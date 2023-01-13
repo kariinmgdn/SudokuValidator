@@ -10,7 +10,7 @@ describe 'End-to-end test' do
         file = File.read('spec/fixtures/valid_complete.sudoku')
 
         result = Validator.validate(file)
-
+        puts result
         expect(result).to eq 'Sudoku is valid.'
       end
     end
